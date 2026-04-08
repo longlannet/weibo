@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "weibo": {
+      "command": "{baseDir}/.venv/bin/mcp-server-weibo"
+    }
+  }
+}
