@@ -1,6 +1,25 @@
 ---
 name: weibo
 description: 微博热搜、内容搜索、用户搜索、用户动态与评论读取。Use when the task involves Weibo / 微博 public content such as checking hot search topics, searching posts, searching users, reading user feeds, or inspecting public discussion.
+homepage: https://github.com/longlannet/weibo
+metadata:
+  {
+    "openclaw":
+      {
+        "emoji": "🧭",
+        "requires": { "bins": ["mcporter"] },
+        "install":
+          [
+            {
+              "id": "node-mcporter",
+              "kind": "node",
+              "package": "mcporter",
+              "bins": ["mcporter"],
+              "label": "Install mcporter (node)",
+            },
+          ],
+      },
+  }
 ---
 
 # Weibo
