@@ -48,6 +48,7 @@ cd weibo && mcporter call weibo.get_trendings limit:3
 
 ## Notes
 - This skill is read-only.
+- Prefer `search_content` for fresh broadcaster/event announcements when web search returns stale profile snapshots or the browser hits the visitor wall. Verify `user.verified`, `verified_reason`, author identity, and `created_at`; distinguish broadcaster notices from commentary or fan reposts. Preserve the returned post ID for a source permalink. Search variants may return different eras or partial text, so check the exact year/date and retrieve fuller evidence when the needed claim is truncated.
 - Run commands from the skill root so the local config is used.
 - Re-run `scripts/install.sh` if setup is missing or stale.
 - Keep detailed human-facing usage in `README.md`.
